@@ -1,0 +1,24 @@
+mysql> use udacity;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> select * from Products;
++----+-----------+-------+
+| id | name      | color |
++----+-----------+-------+
+|  1 | Iphone 5s | Black |
++----+-----------+-------+
+1 row in set (0.00 sec)
+
+mysql> insert into Products (name, color) values ('Iphone 6s', 'Red');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from Products;
++----+-----------+-------+
+| id | name      | color |
++----+-----------+-------+
+|  1 | Iphone 5s | Black |
+|  2 | Iphone 6s | Red   |
++----+-----------+-------+
+2 rows in set (0.00 sec)
